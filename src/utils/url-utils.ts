@@ -20,8 +20,8 @@ export function getPostUrlBySlug(slug: string): string | null {
 export function getCategoryUrl(category: string): string | null {
   if (!category) return null
   if (category === i18n(i18nKey.uncategorized))
-    return '/archive/category/uncategorized'
-  return `/archive/category/${category}`
+    return '/blog/archive/category/uncategorized'
+  return `/blog/archive/category/${category}`
 }
 
 export function getDir(path: string): string {
