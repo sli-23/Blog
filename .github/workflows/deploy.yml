@@ -20,14 +20,17 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16' 
+          node-version: '20' 
 
       - name: Install dependencies and build the site
         uses: withastro/action@v2
-      
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        with:
+          package-manager: 'pnpm@latest'
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: '8' 
 
   deploy:
     needs: build
