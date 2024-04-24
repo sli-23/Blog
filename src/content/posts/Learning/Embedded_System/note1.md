@@ -4,7 +4,7 @@ published: 2024-04-23
 description: Learning note of embedded system
 tags: [Learning, UCSD]
 category: Embedded System
-draft: false
+draft: true
 ---
 
 # 
