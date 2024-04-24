@@ -14,7 +14,7 @@ function joinUrl(...parts: string[]): string {
 
 export function getPostUrlBySlug(slug: string): string | null {
   if (!slug) return null
-  return `/posts/${slug}`
+  return `/blog/posts/${slug}`
 }
 
 export function getCategoryUrl(category: string): string | null {
