@@ -24,8 +24,6 @@ jobs:
 
       - name: Install dependencies and build the site
         uses: withastro/action@v2
-        with:
-          package-manager: 'pnpm@latest'
       
       - name: Install pnpm
         uses: pnpm/action-setup@v2
